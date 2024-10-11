@@ -45,9 +45,9 @@
  - Service: Prioritizing the needs and goals of our clients.
 
 
-                 ~~~~~~~~~~~~~~~~~~~
-                 $ GETTING STARTED $
-                 ~~~~~~~~~~~~~~~~~~~
+                  ~~~~~~~~~~~~~~~~~~~
+                  $ GETTING STARTED $
+                  ~~~~~~~~~~~~~~~~~~~
  
     To begin your journey with us, please explore our services on our website, which is currently undergoing maintenance. We appreciate your patience and look forward to serving you soon.
 
