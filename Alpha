@@ -1,0 +1,46 @@
+Your code will work for basic use, but there are a few areas that could be optimized for better performance or flexibility:
+
+1. Scripture Heuristic: The function is_scripture uses a limited set of keywords that may not cover a wide range of scripture texts across different religious traditions. You may want to expand or customize the list depending on the specific context you're working with.
+
+
+2. Sentence Splitting: Using re.split(r'(?<=[.!?]) +', text) is a reasonable approach, but it assumes that all sentences end with a period, exclamation mark, or question mark. Some scriptures (like the Bible) may not follow this structure exactly. For example, verses are often shorter and might not use those punctuation marks.
+
+
+3. Handling Text Size: If you expect larger scripture texts, you could implement some form of batching or progress tracking to let users know how far along the processing is.
+
+
+
+Suggested Changes
+
+Here are a few improvements you might consider:
+
+1. Expand the keyword list to better match scripture-like text from various sources (this depends on your domain).
+
+
+2. Add handling for punctuation-less scripture references (like biblical verses).
+
+
+3. Return or log more structured information like verse numbers or references if available.
+
+
+
+Example of how you might handle large text processing:
+
+def parse_principles_of_love(text, batch_size=100):
+    keywords = ['love', 'compassion', 'kindness', 'forgiveness', 'patience', 'humility']
+    
+    if not is_scripture(text):
+        print("Warning: The input text does not appear to be scripture. Please enter scripture text.")
+        return []
+
+    sentences = re.split(r'(?<=[.!?]) +', text)
+    love_principles = []
+    
+    for i in range(0, len(sentences), batch_size):
+        batch = sentences[i:i+batch_size]
+        love_principles.extend([s for s in batch if any(keyword in s.lower() for keyword in keywords)])
+        
+        # Progress feedback
+        print(f"Processed {i + batch_size} of {len(sentences)} sentences.")
+    
+    return love_principles
