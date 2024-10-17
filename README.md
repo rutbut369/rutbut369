@@ -27,7 +27,7 @@
 
     We offer a comprehensive range of accounting services tailored to meet the diverse needs of our clients:
 
- - Tax Preparation and Planning:** Expert guidance to maximize your tax benefits and ensure compliance with current laws.
+ - Tax Preparation and Planning: Expert guidance to maximize your tax benefits and ensure compliance with current laws.
  - Bookkeeping Services: Accurate and efficient record-keeping to help you manage your finances with confidence.
  - Financial Consulting: Strategic advice to optimize your financial health and support your business growth.
  - Business Formation and Advisory: Assistance with setting up your business structure and ongoing support to ensure your success.
